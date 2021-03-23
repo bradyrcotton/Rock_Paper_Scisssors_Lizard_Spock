@@ -9,16 +9,12 @@ class Player:
     def pvp(self):
         print("Please enter the number of your choice from the gestures below")
         print(Gesture().gestures)
-        choice_1 = int(input("Player One Enter Choice"))
-        choice_2 = int(input("Player Two Enter Choice"))
+        choice_1 = int(input("Player One Enter Choice: "))
+        choice_2 = int(input("Player Two Enter Choice: "))
+        print(f"Player 1 chooses {Gesture().gestures[choice_1]}")
+        print(f"Player 2 chooses {Gesture().gestures[choice_1]}")
         Gesture().choice(choice_1, choice_2)
-    # def pve(self):
-    #     print("Please enter the number of your choice from the gestures below")
-    #     print(Gesture().gestures)
-    #     choice_1 = int(input("Player One Enter Choice"))
-    #     choice_2 = get_random_number(1, 5)
-    #
-    #     Gesture().choice(choice_1, choice_2)
+
 
 
 

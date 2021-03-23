@@ -9,11 +9,13 @@ class AI(Player):
         self.name = "Wall-E"
         Gesture()
         super().__init__()
-    def pve(self):
+    def pvp(self):
         print("Please enter the number of your choice from the gestures below")
         print(Gesture().gestures)
-        choice_1 = int(input("Player One Enter Choice"))
-        choice_2 = get_random_number(1, 5)
+        choice_1 = int(input("Player One Enter Choice: "))
+        choice_2 = get_random_number(0, 4)
+        print(f"Player 1 chooses {Gesture().gestures[choice_1]}")
+        print(f"Bot chooses {Gesture().gestures[choice_2]}")
 
         Gesture().choice(choice_1, choice_2)
 
