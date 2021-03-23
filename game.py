@@ -1,5 +1,5 @@
 from player import Player
-
+from ai import AI
 
 class Game:
 
@@ -12,6 +12,8 @@ class Game:
         if game_mode == 1:
             Player().pvp()
         elif game_mode == 2:
-            Player().pve()
+            AI().pve()
 
+
+Game().mode()
 
