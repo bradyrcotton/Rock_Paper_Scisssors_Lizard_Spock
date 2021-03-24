@@ -1,5 +1,6 @@
 from player import Player
 
+
 class Human(Player):
 
     def __init__(self):
@@ -7,4 +8,4 @@ class Human(Player):
         super().__init__()
 
 
-# Human().pvp()
+

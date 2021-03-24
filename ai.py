@@ -5,13 +5,9 @@ import random
 
 class AI(Player):
 
-
-
     def __init__(self):
 
         super().__init__()
-
-
 
     def pvp(self):
 
@@ -27,7 +23,6 @@ class AI(Player):
         print(f"Bot chooses {Gesture().gestures[self.choice_2]}")
         print("_____________________________________________________")
         return self.choice_1, self.choice_2
-
 
 
 def random_number(min_value, max_value):

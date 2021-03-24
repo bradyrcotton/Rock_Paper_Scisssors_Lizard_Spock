@@ -2,7 +2,6 @@ from ai import AI
 from human import Human
 
 
-
 class Game:
 
     def __init__(self):
@@ -30,7 +29,7 @@ class Game:
 
             self.num_players = int(input("Please enter number of players 1 or 2: "))
         while self.num_players != 1 and self.num_players != 2:
-            print("invalid input please try again")
+            print("Invalid input please try again")
             self.num_players = int(input("Please enter number of players 1 or 2: "))
         game_mode = self.num_players
         if game_mode == 2:
