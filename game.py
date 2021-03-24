@@ -9,8 +9,8 @@ class Game:
         self.num_players = ""
         self.player_1 = 0
         self.player_2 = 0
-        self.ai = AI()
-        self.human = Human()
+        # self.ai = AI()
+        # self.human = Human()
 
     def mode(self):
         if self.num_players == "":
@@ -21,14 +21,15 @@ class Game:
             choices = Human().pvp()
             self.choice(choices[0], choices[1])
         elif game_mode == 1:
-            self.ai.pvp()
-            self.choice(self.ai.choice_1, self.ai.choice_2)
+            choices = AI().pvp()
+            self.choice(choices[0], choices[1])
 
     def score(self):
+
         while self.player_1 != 2 and self.player_2 != 2:
-            print(self.player_1)
-            print(self.player_2)
             self.mode()
+            print(f"Player 1 Score: {self.player_1}")
+            print(f"Player 2 Score: {self.player_2}")
         if self.player_1 == 2:
             return print("Player 1 is the winner!!!")
         elif self.player_2 == 2:

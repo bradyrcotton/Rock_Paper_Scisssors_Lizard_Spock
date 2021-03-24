@@ -7,4 +7,4 @@ class Human(Player):
         super().__init__()
 
 
-Human().pvp()
+# Human().pvp()

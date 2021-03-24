@@ -8,8 +8,7 @@ class AI(Player):
 
 
     def __init__(self):
-        self.choice_1 = None
-        self.choice_2 = None
+
         super().__init__()
 
 
@@ -22,7 +21,7 @@ class AI(Player):
         self.choice_2 = get_random_number(0, 4)
         print(f"Player 1 chooses {Gesture().gestures[self.choice_1]}")
         print(f"Bot chooses {Gesture().gestures[self.choice_2]}")
-
+        return self.choice_1, self.choice_2
 
 
 
