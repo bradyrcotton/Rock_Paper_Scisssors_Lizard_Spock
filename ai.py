@@ -18,6 +18,9 @@ class AI(Player):
         print("Please enter the number of your choice from the gestures below")
         print(Gesture().gestures)
         self.choice_1 = int(input("Player One Enter Choice: "))
+        while self.choice_1 != 0 and self.choice_1 != 1 and self.choice_1 != 2 and self.choice_1 != 3 and self.choice_1 != 4:
+            print("Invalid input please try again")
+            self.choice_1 = int(input("Player 1 Enter Choice: "))
         self.choice_2 = get_random_number(0, 4)
         print("_____________________________________________________")
         print(f"Player 1 chooses {Gesture().gestures[self.choice_1]}")
