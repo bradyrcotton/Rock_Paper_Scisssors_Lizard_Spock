@@ -19,8 +19,10 @@ class AI(Player):
         print(Gesture().gestures)
         self.choice_1 = int(input("Player One Enter Choice: "))
         self.choice_2 = get_random_number(0, 4)
+        print("_____________________________________________________")
         print(f"Player 1 chooses {Gesture().gestures[self.choice_1]}")
         print(f"Bot chooses {Gesture().gestures[self.choice_2]}")
+        print("_____________________________________________________")
         return self.choice_1, self.choice_2
 
 

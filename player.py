@@ -12,8 +12,10 @@ class Player:
         print(Gesture().gestures)
         self.choice_1 = int(input("Player 1 Enter Choice: "))
         self.choice_2 = int(input("Player 2 Enter Choice: "))
+        print("_____________________________________________________")
         print(f"Player 1 chooses {Gesture().gestures[self.choice_1]}")
         print(f"Player 2 chooses {Gesture().gestures[self.choice_2]}")
+        print("_____________________________________________________")
         return self.choice_1, self.choice_2
 
 
