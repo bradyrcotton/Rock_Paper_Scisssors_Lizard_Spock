@@ -2,22 +2,28 @@ from player import Player
 from gesture import Gesture
 import random
 
+
 class AI(Player):
 
 
+
     def __init__(self):
-        self.name = "Wall-E"
-        Gesture()
+        self.choice_1 = None
+        self.choice_2 = None
         super().__init__()
+
+
+
     def pvp(self):
+
         print("Please enter the number of your choice from the gestures below")
         print(Gesture().gestures)
-        choice_1 = int(input("Player One Enter Choice: "))
-        choice_2 = get_random_number(0, 4)
-        print(f"Player 1 chooses {Gesture().gestures[choice_1]}")
-        print(f"Bot chooses {Gesture().gestures[choice_2]}")
+        self.choice_1 = int(input("Player One Enter Choice: "))
+        self.choice_2 = get_random_number(0, 4)
+        print(f"Player 1 chooses {Gesture().gestures[self.choice_1]}")
+        print(f"Bot chooses {Gesture().gestures[self.choice_2]}")
 
-        Gesture().choice(choice_1, choice_2)
+
 
 
 def random_number(min_value, max_value):
